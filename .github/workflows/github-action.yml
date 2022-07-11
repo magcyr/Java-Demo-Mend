@@ -3,7 +3,7 @@ name: Mend Prioritize Java with Maven
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, master]
 
 jobs:
   build:
