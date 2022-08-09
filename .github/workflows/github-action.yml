@@ -49,7 +49,6 @@ jobs:
           WARFILE=$(find ./ -type f -wholename "*/target/*.war")
           echo $WARFILE will be added to appPath
           java -jar wss-unified-agent.jar -appPath $WARFILE -d ./
-          chmod +x ./ghissue-eua.sh && ./ghissue-eua.sh
           
       - name: 'Upload Mend folder'
         uses: actions/upload-artifact@v2
